@@ -85,6 +85,11 @@ span {
   font-size: 1.1rem;
 }
 
+.footericons {
+  font-size: 1.5 rem;
+  font-weight: bold;
+}
+
 .category-banner a {
   font-family:'Rock Salt', cursive;
   font-size: 1rem;
@@ -205,6 +210,8 @@ footer nav .fa,
 .pure-drawer { /* pop-out hamburger menu */
   padding: 5em 3%;
 }
+
+
 
 .mob-nav a {
   display: block;
@@ -462,6 +469,10 @@ form [class*=col-] {
 
   /* --- General Responsive Helpers ----*/
 
+
+  .hamburger {
+    font-size: 2.0rem;
+  }
   .mob-hide {
       display: none!important;
   }
