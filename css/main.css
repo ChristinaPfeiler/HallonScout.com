@@ -92,11 +92,17 @@ span {
 
 .category-banner a {
   font-family:'Rock Salt', cursive;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   line-height: 1.5;
+  display: inline-block;
 }
 
+.overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 6rem;
+  margin: 3% auto;
+}
 .linkcolor {
   color: #afcfbf;
 }
@@ -318,8 +324,12 @@ background-color: rgba(255, 255, 255, 0.7);
 
 /*EDITORIAL SECTION*/
 
-.overlay {
-  background-color: rgba(255, 255, 255, 0.7);
+.nopaddingbottom {
+  padding-bottom: 0;
+}
+
+.nopaddingtop {
+  padding-top: 0;
 }
 
 .editorialsection {
