@@ -38,6 +38,9 @@
     <!-- Font Awesome for Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- Boblex -->
+    <link rel="stylesheet" href="/css/boblex.css" >
+
     <!-- Gridlex for a simple flexbox grid -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.2.4/gridlex.min.css">
 
@@ -66,7 +69,7 @@
 
 
   <!-- This adds page specific content to the head of that page. -->
-  
+
 
 </head>
 
@@ -108,7 +111,7 @@
   <div class="pure-pusher-container">
       <div class="pure-pusher"> <!-- this contains all of the body of the site -->
 
-        <header class="grid-middle fontheader">
+        <header class="bob-middle fontheader">
   <div class="col-4_sm-12 mob-hide">
     <nav class="left">
       <a href="/allspots.html"> All Spots</a>
@@ -133,13 +136,41 @@
 </header>
 
 
-        <section id="intro-banner" class="banner no-padding centered">
+
+    <section id="intro-banner" class="banner no-padding centered">
   <div class="allspotspage">
+
     <h1>Find all our spots here</h1>
+    <form class="bob-center centered">
+      <select name="countries" class="col-3_sm-12 filters-select">
+        <option value="*">Show All</option>
+        <option value=".australia">Australia</option>
+        <option value=".austria">Austria</option>
+        <option value=".indonesia">Indonesia</option>
+        <option value=".morrocco">Morrocco</option>
+        <option value=".spain">Spain</option>
+        <option value=".usa">USA</option>
+      </select>
+      <br><br>
+      <select name="type" class="col-3_sm-12 filters-select">
+        <option value="*">Show All</option>
+        <option value=".boutique-hotel">Boutique Hotel</option>
+        <!-- <option value=".bed-and-breakfast">Bed and Breakfast</option> -->
+        <!-- <option value=".lodges-and-camps">Lodges and Camps</option>
+        <option value=".farm-house">Farm house</option> -->
+        <option value=".mountain-hut">Mountain Hut</option>
+        <option value=".hostel">Hostel</option>
+        <!-- <option value=".resort">Resort</option>
+        <option value=".private-villa">Private Villa</option> -->
+      </select>
+      <p id="output"></p>
+      <input type="submit" class="col-3_sm-12">
+    </form>
   </div>
       <div class="grid">
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/austria.html'>
+<a   class="grid-item austria mountain-hut" href='/product/austria.html'>
+
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/austria.jpg"class="spots-preview-img">
@@ -150,7 +181,7 @@
       <div class="highlight-preview">
         <p><i class="fa fa-globe" aria-hidden="true"></i> Austria</p>
         <p><i class="fa fa-map-marker" aria-hidden="true"></i> Zell am See</p>
-        <p><i class="fa fa-home" aria-hidden="true"></i> Mountain Hut</p>
+        <p><i class="fa fa-home" aria-hidden="true"></i> </p>
         <p><i class="fa fa-star" aria-hidden="true"></i> Guided hiking tours</p>
         <p class="button-preview .button4">Read more</p>
       </div>
@@ -158,7 +189,8 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/balilodge.html'>
+
+<a   class="grid-item indonesia boutique-hotel" href='/product/balilodge.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/balilodge.jpg"class="spots-preview-img">
@@ -169,7 +201,7 @@
       <div class="highlight-preview">
         <p><i class="fa fa-globe" aria-hidden="true"></i> Indonesia</p>
         <p><i class="fa fa-map-marker" aria-hidden="true"></i> Bali</p>
-        <p><i class="fa fa-home" aria-hidden="true"></i> Boutique Hotel</p>
+        <p><i class="fa fa-home" aria-hidden="true"></i> </p>
         <p><i class="fa fa-star" aria-hidden="true"></i> Organic food only</p>
         <p class="button-preview .button4">Read more</p>
       </div>
@@ -177,7 +209,9 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/coconut.html'>
+
+<a   class="grid-item spain boutique-hotel" href='/product/coconut.html'>
+
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/coconut.jpg"class="spots-preview-img">
@@ -188,7 +222,7 @@
       <div class="highlight-preview">
         <p><i class="fa fa-globe" aria-hidden="true"></i> Spain</p>
         <p><i class="fa fa-map-marker" aria-hidden="true"></i> Mallorca</p>
-        <p><i class="fa fa-home" aria-hidden="true"></i> Boutique Hotel</p>
+        <p><i class="fa fa-home" aria-hidden="true"></i> </p>
         <p><i class="fa fa-star" aria-hidden="true"></i> Personal coaching</p>
         <p class="button-preview .button4">Read more</p>
       </div>
@@ -196,7 +230,8 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/couscous.html'>
+<a   class="grid-item morrocco hostel" href='/product/couscous.html'>
+
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/couscous.jpg"class="spots-preview-img">
@@ -205,9 +240,9 @@
     <div class="dotted">
       <h3 class="header-preview">CousCous</h3>
       <div class="highlight-preview">
-        <p><i class="fa fa-globe" aria-hidden="true"></i> Marroko</p>
+        <p><i class="fa fa-globe" aria-hidden="true"></i> Morrocco</p>
         <p><i class="fa fa-map-marker" aria-hidden="true"></i> Marrakesch</p>
-        <p><i class="fa fa-home" aria-hidden="true"></i> Hostel</p>
+        <p><i class="fa fa-home" aria-hidden="true"></i> </p>
         <p><i class="fa fa-star" aria-hidden="true"></i> Shared dinners</p>
         <p class="button-preview .button4">Read more</p>
       </div>
@@ -215,7 +250,8 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/ecolodge.html'>
+
+<a   class="grid-item usa boutique-hotel" href='/product/ecolodge.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/ecolodge.jpg"class="spots-preview-img">
@@ -226,7 +262,7 @@
       <div class="highlight-preview">
         <p><i class="fa fa-globe" aria-hidden="true"></i> USA</p>
         <p><i class="fa fa-map-marker" aria-hidden="true"></i> Florida</p>
-        <p><i class="fa fa-home" aria-hidden="true"></i> Boutique Hotel</p>
+        <p><i class="fa fa-home" aria-hidden="true"></i> </p>
         <p><i class="fa fa-star" aria-hidden="true"></i> Organic food only</p>
         <p class="button-preview .button4">Read more</p>
       </div>
@@ -234,7 +270,9 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/swissheart.html'>
+
+<a   class="grid-item switzerland mountain-hut" href='/product/swissheart.html'>
+
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/swissheart.jpg"class="spots-preview-img">
@@ -245,7 +283,7 @@
       <div class="highlight-preview">
         <p><i class="fa fa-globe" aria-hidden="true"></i> Switzerland</p>
         <p><i class="fa fa-map-marker" aria-hidden="true"></i> Zurich</p>
-        <p><i class="fa fa-home" aria-hidden="true"></i> Mountain Hut</p>
+        <p><i class="fa fa-home" aria-hidden="true"></i> </p>
         <p><i class="fa fa-star" aria-hidden="true"></i> Guided hiking tours</p>
         <p class="button-preview .button4">Read more</p>
       </div>
@@ -253,7 +291,7 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/sydneytogo.html'>
+<a   class="grid-item australia boutique-hotel" href='/product/sydneytogo.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/sydneytogo.jpg"class="spots-preview-img">
@@ -264,7 +302,7 @@
       <div class="highlight-preview">
         <p><i class="fa fa-globe" aria-hidden="true"></i> Australia</p>
         <p><i class="fa fa-map-marker" aria-hidden="true"></i> Sydney</p>
-        <p><i class="fa fa-home" aria-hidden="true"></i> Boutique Hotel</p>
+        <p><i class="fa fa-home" aria-hidden="true"></i> </p>
         <p><i class="fa fa-star" aria-hidden="true"></i> Personal coaching</p>
         <p class="button-preview .button4">Read more</p>
       </div>
@@ -277,7 +315,7 @@
 </seciont>
 
 
-        <footer class="grid-center centered featured padding0 fontheader">
+        <footer class="bob-center centered featured padding0 fontheader">
   <p class="col-8_sm-12">Connect with us</p>
   <div class="col-8_sm-12">
       <nav class="footericons centered">

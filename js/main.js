@@ -46,4 +46,45 @@ $('.slider-responsive').slick({
   ]
 });
 
+
+// Isotope Sorting
+
+  // Initialise isotope
+  $('.grid').isotope({
+    // options
+    itemSelector: '.grid-item',
+    layout: 'masonry'
+  });
+
+  // Create variables to hold...
+
+  // Output (the combined filter values)
+  var $output = $('#output');
+  // Select box class
+  var $selects = $('.filters-select');
+  // Outer container class
+  var $container = $('.grid');
+
+  // Whenever a select box changes
+  $selects.change( function() {
+    // map selected values to an array
+    var inclusives = [];
+
+    // get filter value from selected values
+    var filterValue = this.value;
+
+    // for each selected value, map values to i & product
+    $selects.each( function( i, product ) {
+        // Add all product.values to the inclusives array
+        inclusives.push( product.value );
+    });
+
+    // combine inclusive filters
+    var filterValue = inclusives.length ? inclusives.join('') : '*';
+
+    // filter with  isotope
+    $container.isotope({ filter: filterValue })
+  });
+
+
 }); //End of document - ready

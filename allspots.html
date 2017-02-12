@@ -3,9 +3,39 @@ layout: default
 title: Spots
 ---
 
+
+<!-- {% for country in site.product.country %}
+  <option value=".{{country | slugify}}">{{country}}</option>
+{% endfor %} -->
+
 <section id="intro-banner" class="banner no-padding centered">
   <div class="allspotspage">
     <h1>Find all our spots here</h1>
+    <form class="bob-center centered">
+      <select name="countries" class="col-3_sm-12 filters-select">
+        <option value="*">Show All</option>
+        <option value=".australia">Australia</option>
+        <option value=".austria">Austria</option>
+        <option value=".indonesia">Indonesia</option>
+        <option value=".morrocco">Morrocco</option>
+        <option value=".spain">Spain</option>
+        <option value=".usa">USA</option>
+      </select>
+      <br><br>
+      <select name="type" class="col-3_sm-12 filters-select">
+        <option value="*">Show All</option>
+        <option value=".boutique-hotel">Boutique Hotel</option>
+        <!-- <option value=".bed-and-breakfast">Bed and Breakfast</option> -->
+        <!-- <option value=".lodges-and-camps">Lodges and Camps</option>
+        <option value=".farm-house">Farm house</option> -->
+        <option value=".mountain-hut">Mountain Hut</option>
+        <option value=".hostel">Hostel</option>
+        <!-- <option value=".resort">Resort</option>
+        <option value=".private-villa">Private Villa</option> -->
+      </select>
+      <p id="output"></p>
+      <input type="submit" class="col-3_sm-12">
+    </form>
   </div>
       {% include allspots.html %}
 </seciont>

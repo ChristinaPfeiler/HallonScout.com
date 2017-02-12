@@ -26,9 +26,9 @@ img {
   max-width: 100%; /* This ensures an image never breaks it's container */
 }
 
-[class*=grid-][class*=-equalHeight]>[class*=col] {
+[class*=bob-][class*=-equalHeight]>[class*=col] {
   display:block;
-  /* This overrides a quirk with gridlex where contents inside of equal height containers become columns themselves */
+  /* This overrides a quirk with boblex where contents inside of equal height containers become columns themselves */
 }
 
 /* ---- GENERAL HELPER CLASSES --------------------------- */
@@ -44,7 +44,7 @@ img {
 
 .mob-show { display: none;}
 
-.full-width { /* for image grids */
+.full-width { /* for image bobs */
   width:100%
 }
 
@@ -143,7 +143,7 @@ section { padding: 5vh 5%; }
 
 /* Other universal styles */
 
-[class*=grid]{
+[class*=bob]{
   margin: 0;
 }
 
@@ -448,6 +448,7 @@ li      { margin-bottom: 0.5rem; }
 
 /* ----- FORMS --------------------------- */
 
+
 input,
 textarea {
   border: 1px solid grey;
@@ -473,6 +474,11 @@ form [class*=col-] {
   padding: 1%;
 }
 
+.grid-item {
+  height: 625px;
+  width: 25%;
+}
+.grid-item--width2 { width: 50%; }
 
 /*------- Media Queries ------------------------*/
 @media(max-width:800px) {

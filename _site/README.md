@@ -4,7 +4,7 @@ For detailed instructions and videos, please see the IOC Student Hub. This readm
 
 The starter theme uses:
 - jekyll
-- Gridlex for the flexbox grid
+- boblex for the flexbox bob
 - snipcart for eCommerce
 - lightwidget for the instagram widget
 - lightbox2 for the pop-up images in the shop
