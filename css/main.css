@@ -85,13 +85,24 @@ span {
   font-size: 1.1rem;
 }
 
-.category-banner a {
-  font-family:'Rock Salt', cursive;
-  font-size: 1rem;
+.footericons {
+  font-size: 2rem;
   font-weight: bold;
-  line-height: 1.5;
 }
 
+.category-banner a {
+  font-family:'Rock Salt', cursive;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 6rem;
+  margin: 3% auto;
+}
 .linkcolor {
   color: #afcfbf;
 }
@@ -206,6 +217,8 @@ footer nav .fa,
   padding: 5em 3%;
 }
 
+
+
 .mob-nav a {
   display: block;
   padding: 0.5em;
@@ -295,6 +308,10 @@ background-color: rgba(255, 255, 255, 0.7);
   margin-top: 1rem;
 }
 
+.prodpreview {
+
+}
+
 .highlight-preview p {
   margin-bottom: 0;
 }
@@ -307,8 +324,12 @@ background-color: rgba(255, 255, 255, 0.7);
 
 /*EDITORIAL SECTION*/
 
-.overlay {
-  background-color: rgba(255, 255, 255, 0.7);
+.nopaddingbottom {
+  padding-bottom: 0;
+}
+
+.nopaddingtop {
+  padding-top: 0;
 }
 
 .editorialsection {
@@ -361,15 +382,6 @@ background-color: rgba(255, 255, 255, 0.7);
   z-index: 80;
 }
 
-/*ALL SPOTS PAGE HEADER*/
-.imageallspots {
-  background-image:url("/images/slider1.jpg");
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  color: inherit;
-}
 
 /* Shop Elements */
 .product-loop a {
@@ -473,6 +485,10 @@ form [class*=col-] {
 
   /* --- General Responsive Helpers ----*/
 
+
+  .hamburger {
+    font-size: 2.0rem;
+  }
   .mob-hide {
       display: none!important;
   }

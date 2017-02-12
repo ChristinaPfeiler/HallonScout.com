@@ -46,6 +46,7 @@ $('.slider-responsive').slick({
   ]
 });
 
+
 // Isotope Sorting
 
   // Initialise isotope

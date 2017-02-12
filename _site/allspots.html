@@ -38,11 +38,11 @@
     <!-- Font Awesome for Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- boblex for a simple flexbox bob -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/boblex/2.2.4/boblex.min.css"> -->
-
     <!-- Boblex -->
     <link rel="stylesheet" href="/css/boblex.css" >
+
+    <!-- Gridlex for a simple flexbox grid -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.2.4/gridlex.min.css">
 
     <!-- Pure Drawer for hamburger menu -->
     <link rel="stylesheet" href="/css/pure-drawer.css">
@@ -69,7 +69,7 @@
 
 
   <!-- This adds page specific content to the head of that page. -->
-  
+
 
 </head>
 
@@ -86,13 +86,14 @@
   <!-- This contains the hamburger menu when it's popped out-->
   <div class="pure-drawer" data-position="right">
 
-    <h2> LOGO </h2>
+    <h2 class="hamburger"> HallonScout </h2>
 
 <nav class="mob-nav">
-  <a href="/index"> Home </a>
-  <a href="/about"> About </a>
-  <a href="/blog"> Blog </a>
-  <a href="/shop"> Shop </a>
+  <a href="/index.html"> Home </a>
+  <a href="/allspots.html"> All Spots</a>
+  <a href="/about.html"> About </a>
+  <!-- <a href="/blog"> Blog </a>
+  <a href="/shop"> Shop </a> -->
 </nav>
 
 <hr> <!-- this is a horizontal rule, aka line -->
@@ -135,11 +136,10 @@
 </header>
 
 
-        <!--  -->
 
-<section id="intro-banner" class="banner no-padding centered">
-  <div class="allspotspage imageallspots">
-    <h2>All spots</h2>
+    <section id="intro-banner" class="banner no-padding centered">
+  <div class="allspotspage">
+
     <h1>Find all our spots here</h1>
     <form class="bob-center centered">
       <select name="countries" class="col-3_sm-12 filters-select">
@@ -170,6 +170,7 @@
       <div class="grid">
 
 <a   class="grid-item austria mountain-hut" href='/product/austria.html'>
+
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/austria.jpg"class="spots-preview-img">
@@ -187,6 +188,7 @@
     </div>
   </div>
 </a>
+
 
 <a   class="grid-item indonesia boutique-hotel" href='/product/balilodge.html'>
   <div>
@@ -207,7 +209,9 @@
   </div>
 </a>
 
+
 <a   class="grid-item spain boutique-hotel" href='/product/coconut.html'>
+
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/coconut.jpg"class="spots-preview-img">
@@ -227,6 +231,7 @@
 </a>
 
 <a   class="grid-item morrocco hostel" href='/product/couscous.html'>
+
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/couscous.jpg"class="spots-preview-img">
@@ -244,6 +249,7 @@
     </div>
   </div>
 </a>
+
 
 <a   class="grid-item usa boutique-hotel" href='/product/ecolodge.html'>
   <div>
@@ -264,7 +270,9 @@
   </div>
 </a>
 
+
 <a   class="grid-item switzerland mountain-hut" href='/product/swissheart.html'>
+
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/swissheart.jpg"class="spots-preview-img">
@@ -304,20 +312,18 @@
 
 </div>
 
-</section>
+</seciont>
 
 
         <footer class="bob-center centered featured padding0 fontheader">
   <p class="col-8_sm-12">Connect with us</p>
   <div class="col-8_sm-12">
-      <nav>
-        <a href="/contact"> Contact</a>
+      <nav class="footericons centered">
         <a href="SOCIALMEDIALINK"> <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
         <a href="SOCIALMEDIALINK"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <a href="SOCIALMEDIALINK"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
       </nav>
   </div>
-  <form class="col-8_sm-12">????</form>
   <div class="col-8_sm-12">
       <nav>
         <a href="/faq"> FAQ</a>
@@ -345,9 +351,6 @@
 
 <!--Slick Carousel Startpage index.html-->
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
-<!-- Isotope sorting -->
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 <!-- This is your file with custom javascript or jquery -->
 <script src="/js/main.js"></script>

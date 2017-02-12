@@ -38,11 +38,12 @@
     <!-- Font Awesome for Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- boblex for a simple flexbox bob -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/boblex/2.2.4/boblex.min.css"> -->
-
     <!-- Boblex -->
     <link rel="stylesheet" href="/css/boblex.css" >
+
+    <!-- Gridlex for a simple flexbox grid -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.2.4/gridlex.min.css">
+
 
     <!-- Pure Drawer for hamburger menu -->
     <link rel="stylesheet" href="/css/pure-drawer.css">
@@ -69,7 +70,7 @@
 
 
   <!-- This adds page specific content to the head of that page. -->
-  
+
 
 </head>
 
@@ -86,13 +87,14 @@
   <!-- This contains the hamburger menu when it's popped out-->
   <div class="pure-drawer" data-position="right">
 
-    <h2> LOGO </h2>
+    <h2 class="hamburger"> HallonScout </h2>
 
 <nav class="mob-nav">
-  <a href="/index"> Home </a>
-  <a href="/about"> About </a>
-  <a href="/blog"> Blog </a>
-  <a href="/shop"> Shop </a>
+  <a href="/index.html"> Home </a>
+  <a href="/allspots.html"> All Spots</a>
+  <a href="/about.html"> About </a>
+  <!-- <a href="/blog"> Blog </a>
+  <a href="/shop"> Shop </a> -->
 </nav>
 
 <hr> <!-- this is a horizontal rule, aka line -->
@@ -199,14 +201,12 @@
         <footer class="bob-center centered featured padding0 fontheader">
   <p class="col-8_sm-12">Connect with us</p>
   <div class="col-8_sm-12">
-      <nav>
-        <a href="/contact"> Contact</a>
+      <nav class="footericons centered">
         <a href="SOCIALMEDIALINK"> <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
         <a href="SOCIALMEDIALINK"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <a href="SOCIALMEDIALINK"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
       </nav>
   </div>
-  <form class="col-8_sm-12">????</form>
   <div class="col-8_sm-12">
       <nav>
         <a href="/faq"> FAQ</a>
@@ -234,9 +234,6 @@
 
 <!--Slick Carousel Startpage index.html-->
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
-<!-- Isotope sorting -->
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 <!-- This is your file with custom javascript or jquery -->
 <script src="/js/main.js"></script>
