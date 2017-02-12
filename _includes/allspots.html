@@ -1,6 +1,6 @@
-<div class="bob">
+<div class="grid">
 {% for pre in site.product %}
-<a   class="col-3_header_sm-12 paddingprodpreview" href='{{pre.url}}'>
+<a   class="grid-item {{pre.country | slugify}} {{pre.type | slugify}}" href='{{pre.url}}'>
   <div>
     <div class="prodpreview">
       <img src="{{pre.previewimg}}"class="spots-preview-img">

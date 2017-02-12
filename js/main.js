@@ -69,19 +69,23 @@ $('.slider-responsive').slick({
   $selects.change( function() {
     // map selected values to an array
     var inclusives = [];
+    console.log(inclusives);
 
     // get filter value from selected values
     var filterValue = this.value;
+    console.log(filterValue);
 
     // for each selected value, map values to i & product
     $selects.each( function( i, product ) {
         // Add all product.values to the inclusives array
         inclusives.push( product.value );
+        console.log(inclusives);
     });
 
     // combine inclusive filters
     var filterValue = inclusives.length ? inclusives.join('') : '*';
 
+    // $output.text(filterValue);
     // filter with  isotope
     $container.isotope({ filter: filterValue })
   });

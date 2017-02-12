@@ -474,11 +474,11 @@ form [class*=col-] {
   padding: 1%;
 }
 
-.grid-item {
+.bob-item {
   height: 625px;
   width: 25%;
 }
-.grid-item--width2 { width: 50%; }
+.bob-item--width2 { width: 50%; }
 
 /*------- Media Queries ------------------------*/
 @media(max-width:800px) {

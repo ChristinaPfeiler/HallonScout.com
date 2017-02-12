@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<div class="grid">
+<div class="bob">
 {% for pre in site.product %}
 {% if pre.type == "Hostel" %}
-<a class="grid-item {{pre.country | slugify}} {{pre.type | slugify}}" href='{{pre.url}}'>
+<a class="bob-item {{pre.country | slugify}} {{pre.type | slugify}}" href='{{pre.url}}'>
   <div>
     <div class="prodpreview">
       <img src="{{pre.previewimg}}"class="spots-preview-img">
