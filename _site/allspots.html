@@ -39,7 +39,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Gridlex for a simple flexbox grid -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.2.4/gridlex.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.2.4/gridlex.min.css"> -->
+
+    <!-- Boblex -->
+    <link rel="stylesheet" href="/css/boblex.css" >
 
     <!-- Pure Drawer for hamburger menu -->
     <link rel="stylesheet" href="/css/pure-drawer.css">
@@ -133,13 +136,13 @@
 
 
         <section id="intro-banner" class="banner no-padding centered">
-  <div class="allspotspage">
+  <div class="allspotspage imageallspots">
     <h2>All spots</h2>
     <h1>Find all our spots here</h1>
   </div>
-      <div class="grid">
+      <div class="grid-isotope">
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/austria.html'>
+<a   class="grid-item-isotope" href='/product/austria.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/austria.jpg"class="spots-preview-img">
@@ -158,7 +161,7 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/balilodge.html'>
+<a   class="grid-item-isotope" href='/product/balilodge.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/balilodge.jpg"class="spots-preview-img">
@@ -177,7 +180,7 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/coconut.html'>
+<a   class="grid-item-isotope" href='/product/coconut.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/coconut.jpg"class="spots-preview-img">
@@ -196,7 +199,7 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/couscous.html'>
+<a   class="grid-item-isotope" href='/product/couscous.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/couscous.jpg"class="spots-preview-img">
@@ -215,7 +218,7 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/ecolodge.html'>
+<a   class="grid-item-isotope" href='/product/ecolodge.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/ecolodge.jpg"class="spots-preview-img">
@@ -234,7 +237,7 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/swissheart.html'>
+<a   class="grid-item-isotope" href='/product/swissheart.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/swissheart.jpg"class="spots-preview-img">
@@ -253,7 +256,7 @@
   </div>
 </a>
 
-<a   class="col-3_header_sm-12 paddingprodpreview" href='/product/sydneytogo.html'>
+<a   class="grid-item-isotope" href='/product/sydneytogo.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/sydneytogo.jpg"class="spots-preview-img">
@@ -274,7 +277,7 @@
 
 </div>
 
-</seciont>
+</section>
 
 
         <footer class="grid-center centered featured padding0 fontheader">
@@ -315,6 +318,9 @@
 
 <!--Slick Carousel Startpage index.html-->
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<!-- Isotope sorting -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 <!-- This is your file with custom javascript or jquery -->
 <script src="/js/main.js"></script>

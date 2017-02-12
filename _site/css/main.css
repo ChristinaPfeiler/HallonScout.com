@@ -295,10 +295,6 @@ background-color: rgba(255, 255, 255, 0.7);
   margin-top: 1rem;
 }
 
-.prodpreview {
-
-}
-
 .highlight-preview p {
   margin-bottom: 0;
 }
@@ -365,6 +361,15 @@ background-color: rgba(255, 255, 255, 0.7);
   z-index: 80;
 }
 
+/*ALL SPOTS PAGE HEADER*/
+.imageallspots {
+  background-image:url("/images/slider1.jpg");
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  color: inherit;
+}
 
 /* Shop Elements */
 .product-loop a {
