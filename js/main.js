@@ -47,9 +47,10 @@ $('.slider-responsive').slick({
 });
 
 // Isotope Sorting
-$('.grid-isotope').isotope({
+$('.grid').isotope({
   // options
-  itemSelector: '.grid-item-isotope',
+  itemSelector: '.grid-item',
+  layout: 'masonry'
 });
 
 }); //End of document - ready

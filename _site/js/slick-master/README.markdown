@@ -95,9 +95,9 @@ pauseOnHover | boolean | true | Pauses autoplay on hover
 pauseOnDotsHover | boolean | false | Pauses autoplay when a dot is hovered
 respondTo | string | 'window' | Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two).
 responsive | array | null | Array of objects [containing breakpoints and settings objects (see example)](#responsive-option-example). Enables settings at given `breakpoint`. Set `settings` to "unslick" instead of an object to disable slick at a given breakpoint.
-rows | int | 1 | Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.
+rows | int | 1 | Setting this to more than 1 initializes bob mode. Use slidesPerRow to set how many slides should be in each row.
 slide | string | '' | Slide element query
-slidesPerRow | int | 1 | With grid mode initialized via the rows option, this sets how many slides are in each grid row.
+slidesPerRow | int | 1 | With bob mode initialized via the rows option, this sets how many slides are in each bob row.
 slidesToShow | int | 1 | # of slides to show at a time
 slidesToScroll | int | 1 | # of slides to scroll at a time
 speed | int | 300 | Transition speed

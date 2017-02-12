@@ -38,8 +38,8 @@
     <!-- Font Awesome for Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Gridlex for a simple flexbox grid -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.2.4/gridlex.min.css"> -->
+    <!-- boblex for a simple flexbox bob -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/boblex/2.2.4/boblex.min.css"> -->
 
     <!-- Boblex -->
     <link rel="stylesheet" href="/css/boblex.css" >
@@ -110,7 +110,7 @@
   <div class="pure-pusher-container">
       <div class="pure-pusher"> <!-- this contains all of the body of the site -->
 
-        <header class="grid-middle fontheader">
+        <header class="bob-middle fontheader">
   <div class="col-4_sm-12 mob-hide">
     <nav class="left">
       <a href="/allspots.html"> All Spots</a>
@@ -139,10 +139,31 @@
   <div class="allspotspage imageallspots">
     <h2>All spots</h2>
     <h1>Find all our spots here</h1>
-  </div>
-      <div class="grid-isotope">
+    <form class="bob-center centered">
+      <select name="countries" class="col-3_sm-12">
+        <option value="austria">Austria</option>
+        <option value="Australia">Australia</option>
+        <option value="Bali">Bali</option>
+        <option value="Spain">Spain</option>
+      </select>
+      <br><br>
+      <select name="type" class="col-3_sm-12">
+        <option value="Boutique Hotel">Boutique Hotel</option>
+        <option value="Bed&Breakfast">Bed&Breakfast</option>
+        <option value="Lodges & Camps">Lodges & Camps</option>
+        <option value="Farm house">Farm house</option>
+        <option value="Mountain Hut">Mountain Hut</option>
+        <option value="Hostel">Hostel</option>
+        <option value="Resort">Resort</option>
+        <option value="Private Villa">Private Villa</option>
 
-<a   class="grid-item-isotope" href='/product/austria.html'>
+      </select>
+      <input type="submit" class="col-3_sm-12">
+    </form>
+  </div>
+      <div class="grid">
+
+<a   class="grid-item" href='/product/austria.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/austria.jpg"class="spots-preview-img">
@@ -161,7 +182,7 @@
   </div>
 </a>
 
-<a   class="grid-item-isotope" href='/product/balilodge.html'>
+<a   class="grid-item" href='/product/balilodge.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/balilodge.jpg"class="spots-preview-img">
@@ -180,7 +201,7 @@
   </div>
 </a>
 
-<a   class="grid-item-isotope" href='/product/coconut.html'>
+<a   class="grid-item" href='/product/coconut.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/coconut.jpg"class="spots-preview-img">
@@ -199,7 +220,7 @@
   </div>
 </a>
 
-<a   class="grid-item-isotope" href='/product/couscous.html'>
+<a   class="grid-item" href='/product/couscous.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/couscous.jpg"class="spots-preview-img">
@@ -218,7 +239,7 @@
   </div>
 </a>
 
-<a   class="grid-item-isotope" href='/product/ecolodge.html'>
+<a   class="grid-item" href='/product/ecolodge.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/ecolodge.jpg"class="spots-preview-img">
@@ -237,7 +258,7 @@
   </div>
 </a>
 
-<a   class="grid-item-isotope" href='/product/swissheart.html'>
+<a   class="grid-item" href='/product/swissheart.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/swissheart.jpg"class="spots-preview-img">
@@ -256,7 +277,7 @@
   </div>
 </a>
 
-<a   class="grid-item-isotope" href='/product/sydneytogo.html'>
+<a   class="grid-item" href='/product/sydneytogo.html'>
   <div>
     <div class="prodpreview">
       <img src="/images/prod-preview/sydneytogo.jpg"class="spots-preview-img">
@@ -280,7 +301,7 @@
 </section>
 
 
-        <footer class="grid-center centered featured padding0 fontheader">
+        <footer class="bob-center centered featured padding0 fontheader">
   <p class="col-8_sm-12">Connect with us</p>
   <div class="col-8_sm-12">
       <nav>
