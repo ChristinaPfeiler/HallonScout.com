@@ -1,0 +1,10 @@
+{% for post in site.posts limit:4 %}
+<a href='{{post.url}}'>
+  <div class="col-3_sm-12">
+    <img src="{{post.img}}"class="blog-preview-img">
+    <div class="overlay">
+      <h5 class="editorialboxes">More</h5>
+    </div>
+  </div>
+</a>
+{% endfor %}

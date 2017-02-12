@@ -1,0 +1,6 @@
+collections:
+- product
+
+collections:
+  product:
+    output: true
