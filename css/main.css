@@ -73,9 +73,16 @@ p  { font-size: 1.1rem; line-height: 1.5;}
 blockquote  { font-size: 1.1rem; line-height: 1.5;}
 li  {font-size: 1.1rem; }
 
+span {
+  margin: 0;
+  font-family: 'PT Sans Narrow', sans-serif; font-weight: normal; font-size: 1.8rem; line-height: 1.5;
+}
+.small {
+  font-size: 1.5rem;
+}
 .category-banner a {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 1.1rem;
+  font-family:'Rock Salt', cursive;
+  font-size: 1rem;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -129,7 +136,7 @@ section { padding: 5vh 5%; }
 }
 
 .featured{
-  background-color: #afcfbf;
+  background-color: #dfece5;
 }
 .fa.featured {
   color: #1abc9c; /* featured color */
@@ -253,17 +260,19 @@ background-color: rgba(255, 255, 255, 0.7);
   background-size: cover;
   padding-top: 3%;
 }
-.slider1{
+.slider3{
   background-image:url("/images/slider1.jpg");
+  background-position: center center;
+  color: #2C3539;
 }
 
 .slider2{
   background-image:url("/images/slider2.jpg");
   padding-top: 1%
-  color: #2C3539
+  color: #2C3539;
 }
 
-.slider3{
+.slider1{
   background-image:url("/images/slider3.jpg");
 }
 
@@ -341,6 +350,16 @@ background-color: rgba(255, 255, 255, 0.7);
   min-height: 20vh;
 }
 
+/*PRODUCT MICROSITE*/
+
+.slick-prev {
+  left: 25px;
+  z-index: 80;
+}
+.slick-next {
+  right: 25px;
+  z-index: 80;
+}
 
 
 /* Shop Elements */
@@ -395,10 +414,8 @@ background-color: rgba(255, 255, 255, 0.7);
   margin: 2vh 0;
 }
 blockquote {
-  border-left: 2px solid rgb(245,245,245);
-  margin-left: 3%;
-  padding-left: 3%;
-  font-weight: 600;
+  font-weight: 300;
+  font-style: italic;
   color: rgb(90,90,95);
 }
 /* Lists */

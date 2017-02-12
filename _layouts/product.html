@@ -1,0 +1,74 @@
+---
+layout: default
+title: Micropage All Spots
+---
+
+<section>
+  <!--SLIDESHOW MICROSITE-->
+  <div class="slider-responsive">
+    <div>
+    <img src="{{page.previewimg}}"class="spots-preview-img">
+  </div>
+    <div>
+      <img src="{{page.image2}}"class="spots-preview-img">
+    </div>
+    <div>
+    <img src="{{page.image3}}"class="spots-preview-img">
+  </div>
+  <div>
+  <img src="{{page.image4}}"class="spots-preview-img">
+</div>
+<div>
+<img src="{{page.image5}}"class="spots-preview-img">
+</div>
+</div>
+
+<!--INFO SHORT-->
+  <div>
+  <h2>{{page.spotname}}</h2>
+  <p><i class="fa fa-globe" aria-hidden="true"></i> {{page.country}}</p>
+  <p><i class="fa fa-home" aria-hidden="true"></i> {{page.typeaccommodation}}</p>
+  <p><i class="fa fa-star" aria-hidden="true"></i> {{page.highlight}}</p>
+
+<!--INFOTEXT-->
+  <h5 class="bold">{{page.teaser}}</h5>
+  </div>
+<h5>{{page.description}}</h5>
+*/possible to put blockquote in?*/
+
+<!--HIGHLIGHTS-->
+<h5>All you need to know</h5>
+
+{% if page.email == true %}
+<p><i class="fa fa-star" aria-hidden="true"> E-Mail</i>
+{% endif %}
+
+{% if page.restaurant == true %}
+<p><i class="fa fa-star" aria-hidden="true"> Restaurant</i>
+{% endif %}
+
+{% if page.pool == true %}
+<p><i class="fa fa-star" aria-hidden="true"></i>Pool</p>
+{% endif %}
+
+{% if page.dogsfriendly == true %}
+<p><i class="fa fa-star" aria-hidden="true"></i>Dogs friendly</p>
+{% endif %}
+
+{% if page.courses == true %}
+<p><i class="fa fa-star" aria-hidden="true"></i>Courses</p>
+{% endif %}
+
+
+<!--CONTACT DETAILS-->
+<h5>Contact details</h5>
+<p><i class="fa fa-star" aria-hidden="true">E-Mail</i> {{page.email}}</p>
+<p><i class="fa fa-star" aria-hidden="true"></i> {{page.address}}</p>
+<p><i class="fa fa-star" aria-hidden="true"></i> {{page.country}}</p>
+<p><i class="fa fa-star" aria-hidden="true"></i> {{page.website}}</p>
+
+<!--REVIEWS-->
+<h5>Reviews</h5>
+  <a href={{page.reviewlink}}>{{page.reviewimg}}{{page.reviewlogo}}{{page.reviewdate}}</a>
+
+  </section>
