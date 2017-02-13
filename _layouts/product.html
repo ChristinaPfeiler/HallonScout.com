@@ -3,7 +3,7 @@ layout: default
 title: Micropage All Spots
 ---
 
-<section>
+<section class="paddingsliderproduct">
   <!--SLIDESHOW MICROSITE-->
   <div class="slider-responsive">
     <div>
@@ -24,40 +24,30 @@ title: Micropage All Spots
 </div>
 
 <!--INFO SHORT-->
-  <div>
-  <h2>{{page.spotname}}</h2>
-  <p><i class="fa fa-globe" aria-hidden="true"></i> {{page.country}}</p>
-  <p><i class="fa fa-home" aria-hidden="true"></i> {{page.type}}</p>
-  <p><i class="fa fa-star" aria-hidden="true"></i> {{page.highlight}}</p>
+<nav>
+  <div class="paddingproduct">
+  <br><hr class="styleproduct"><br>
+  <h2 class="productheader">{{page.spotname}}</h2>
+  <nav >
+  <i class="fa fa-globe" aria-hidden="true"></i>  {{page.country}}
+  <i class="fa fa-home paddingteasericons" aria-hidden="true"></i>  {{page.type}}
+  <i class="fa fa-star paddingteasericons" aria-hidden="true"></i>  {{page.highlight}}
+  </nav>
+  <br><hr class="styleproduct"><br>
 
-<!--INFOTEXT-->
-  <h5 class="bold">{{page.teaser}}</h5>
-  </div>
-<h5>{{page.description}}</h5>
-*/possible to put blockquote in?*/
-
+  <h2 class="small nopaddingbottom">{{page.teaser}}</h2>
+  <p class="left">{{page.description}}</p>
+  <br><hr class="style12"><br>
 <!--HIGHLIGHTS-->
-<h5>All you need to know</h5>
+<h2 class="small paddingbottom">All you need to know</h2>
+<nav>{% if page.organic == true %}<i class"fa fa-leaf" aria-hidden="true"> </i> Organic Food {% endif %}
+{% if page.restaurant == true %} <p><i class="fa fa-leaf" aria-hidden="true"> Restaurant</i> {% endif %}
+{% if page.pool == true %} <i class="fa fa-leaf" aria-hidden="true"> Pool</i>{% endif %}
+{% if page.dogsfriendly == true %}<i class="fa fa-leaf" aria-hidden="true"> Dogs freindly</i>{% endif %}
+{% if page.courses == true %}<i class="fa fa-leaf" aria-hidden="true"> Courses</i>{% endif %}
+</p>
+<br><hr class="styleproduct"><br>
 
-{% if page.email == true %}
-<p><i class="fa fa-star" aria-hidden="true"> E-Mail</i>
-{% endif %}
-
-{% if page.restaurant == true %}
-<p><i class="fa fa-star" aria-hidden="true"> Restaurant</i>
-{% endif %}
-
-{% if page.pool == true %}
-<p><i class="fa fa-star" aria-hidden="true"></i>Pool</p>
-{% endif %}
-
-{% if page.dogsfriendly == true %}
-<p><i class="fa fa-star" aria-hidden="true"></i>Dogs friendly</p>
-{% endif %}
-
-{% if page.courses == true %}
-<p><i class="fa fa-star" aria-hidden="true"></i>Courses</p>
-{% endif %}
 
 
 <!--CONTACT DETAILS-->
@@ -71,4 +61,5 @@ title: Micropage All Spots
 <h5>Reviews</h5>
   <a href={{page.reviewlink}}>{{page.reviewimg}}{{page.reviewlogo}}{{page.reviewdate}}</a>
 
+</nav>
   </section>
