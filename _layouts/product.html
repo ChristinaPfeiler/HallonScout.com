@@ -37,28 +37,36 @@ title: Micropage All Spots
 
   <h2 class="small nopaddingbottom">{{page.teaser}}</h2>
   <p class="left">{{page.description}}</p>
-  <br><hr class="style12"><br>
+  <h2 class="small paddingbottom paddingtop">All you need to know</h2>
+  <nav>{% if page.organic == true %}<i class"fa fa-leaf paddingteasericons" aria-hidden="true"> </i> Organic Food {% endif %}
+  {% if page.restaurant == true %} <i class="fa fa-leaf" aria-hidden="true"></i> Restaurant {% endif %}
+  {% if page.pool == true %} <i class="fa fa-leaf paddingteasericons" aria-hidden="true"></i> Pool{% endif %}
+  {% if page.dogsfriendly == true %}<i class="fa fa-leaf paddingteasericons" aria-hidden="true"> </i> Dogs friendly{% endif %}
+  {% if page.courses == true %}<i class="fa fa-leaf paddingteasericons" aria-hidden="true"> </i> Courses{% endif %}
+</nav>
 <!--HIGHLIGHTS-->
-<h2 class="small paddingbottom">All you need to know</h2>
-<nav>{% if page.organic == true %}<i class"fa fa-leaf" aria-hidden="true"> </i> Organic Food {% endif %}
-{% if page.restaurant == true %} <p><i class="fa fa-leaf" aria-hidden="true"> Restaurant</i> {% endif %}
-{% if page.pool == true %} <i class="fa fa-leaf" aria-hidden="true"> Pool</i>{% endif %}
-{% if page.dogsfriendly == true %}<i class="fa fa-leaf" aria-hidden="true"> Dogs freindly</i>{% endif %}
-{% if page.courses == true %}<i class="fa fa-leaf" aria-hidden="true"> Courses</i>{% endif %}
-</p>
+
 <br><hr class="styleproduct"><br>
-
-
-
-<!--CONTACT DETAILS-->
-<h5>Contact details</h5>
-<p><i class="fa fa-star" aria-hidden="true">E-Mail</i> {{page.email}}</p>
-<p><i class="fa fa-star" aria-hidden="true"></i> {{page.address}}</p>
-<p><i class="fa fa-star" aria-hidden="true"></i> {{page.country}}</p>
-<p><i class="fa fa-star" aria-hidden="true"></i> {{page.website}}</p>
-
-<!--REVIEWS-->
-<h5>Reviews</h5>
+<h2 class="small paddingbottom">Contact details</h2>
+<table>
+  <tr>
+    <td> Email: </td>
+    <td>{{page.email}}</td>
+  <tr>
+    <tr>
+      <td> Address: </td>
+      <td>{{page.address}}</td>
+    <tr>
+    <tr>
+      <td> Country: </td>
+      <td>{{page.country}}</td>
+    <tr>
+  <tr>
+    <td> Website: </td>
+    <td>{{page.website}}</td>
+  <tr>
+</table>
+<h2 class="small paddingbottom">Reviews</h2>
   <a href={{page.reviewlink}}>{{page.reviewimg}}{{page.reviewlogo}}{{page.reviewdate}}</a>
 
 </nav>

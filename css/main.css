@@ -193,8 +193,6 @@ nav a:hover {
 }
 
 .logo {
-  max-height: 2.5rem;
-  margin: 0.5em 0;
   text-decoration: none;
   color: inherit;
   font-size: 2rem;
@@ -404,6 +402,8 @@ hr.styleproduct {
     border: 0;
     width: 100%;
   padding: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .paddingteasericons {
@@ -415,9 +415,15 @@ hr.styleproduct {
 
 .paddingbottom {
   padding-bottom: 10px;
-  padding-top: 10px;
 }
 
+.paddingtop {
+  padding-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
 .paddingproduct {
   padding-left: 15%;
   padding-right: 15%;
@@ -432,6 +438,9 @@ hr.styleproduct {
   padding-bottom: 1rem;
 }
 
+td {
+  padding-right: 15px;
+}
 
 /* Shop Elements */
 .product-loop a {
