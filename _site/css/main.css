@@ -364,8 +364,10 @@ hr.style12 {
   position: relative;
 }
 
+
 .boxblog { /* This can be used for any col or div that you want filled with a background image. */
-  background-image: url('/images/editboxblog.jpg'); /* if you are adding a unique image to every one you can remove this */
+  background-image: url('/images/editboxblog.jpg');
+  /* if you are adding a unique image to every one you can remove this */
 }
 
 .boxspot { /* This can be used for any col or div that you want filled with a background image. */
